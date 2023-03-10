@@ -6,9 +6,11 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default ({
   setup() {
-    let name = 'Kim jiae';
+    const name = ref('Kim jiae');
 
     // const greeting = (name) => {
     //   return 'Hello, ' + name;
@@ -17,7 +19,7 @@ export default ({
     // const greet = greeting(name);
 
     const updateName = () => {
-      name = 'Kim jiae update';
+      name.value = 'Kim jiae update';
       console.log(name);
     };
 
