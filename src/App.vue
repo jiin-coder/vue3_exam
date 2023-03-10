@@ -1,5 +1,6 @@
 <template>
-  <div>{{ name }}</div>
+  <div class="name">{{ name }}</div>
+  <div>Hi</div>
 </template>
 
 <script>
@@ -15,5 +16,7 @@ export default ({
 </script>
 
 <style scoped>
-
+  .name {
+    color:blue;
+  }
 </style>
